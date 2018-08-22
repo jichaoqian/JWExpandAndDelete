@@ -15,6 +15,9 @@
 		EA6132A720DBAE44004BA4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6132A620DBAE44004BA4EA /* main.m */; };
 		EA6132B120DBAE44004BA4EA /* ExpandAndDeleteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6132B020DBAE44004BA4EA /* ExpandAndDeleteTests.m */; };
 		EA6132BC20DBAE44004BA4EA /* ExpandAndDeleteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6132BB20DBAE44004BA4EA /* ExpandAndDeleteUITests.m */; };
+		EA6422A9212D3B3400A3ACF2 /* JWExpandAndDeleteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6422A3212D3B3400A3ACF2 /* JWExpandAndDeleteVC.m */; };
+		EA6422AA212D3B3400A3ACF2 /* JWExpandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6422A6212D3B3400A3ACF2 /* JWExpandCell.m */; };
+		EA6422AB212D3B3400A3ACF2 /* JWOriginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6422A8212D3B3400A3ACF2 /* JWOriginCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		EA6132B720DBAE44004BA4EA /* ExpandAndDeleteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpandAndDeleteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6132BB20DBAE44004BA4EA /* ExpandAndDeleteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandAndDeleteUITests.m; sourceTree = "<group>"; };
 		EA6132BD20DBAE44004BA4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6422A2212D3B3400A3ACF2 /* JWExpandAndDeleteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWExpandAndDeleteVC.h; sourceTree = "<group>"; };
+		EA6422A3212D3B3400A3ACF2 /* JWExpandAndDeleteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWExpandAndDeleteVC.m; sourceTree = "<group>"; };
+		EA6422A5212D3B3400A3ACF2 /* JWExpandCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWExpandCell.h; sourceTree = "<group>"; };
+		EA6422A6212D3B3400A3ACF2 /* JWExpandCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWExpandCell.m; sourceTree = "<group>"; };
+		EA6422A7212D3B3400A3ACF2 /* JWOriginCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWOriginCell.h; sourceTree = "<group>"; };
+		EA6422A8212D3B3400A3ACF2 /* JWOriginCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWOriginCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		EA61329620DBAE3C004BA4EA /* ExpandAndDelete */ = {
 			isa = PBXGroup;
 			children = (
+				EA6422A1212D3B3400A3ACF2 /* expandAndDelete */,
 				EA61329720DBAE3C004BA4EA /* AppDelegate.h */,
 				EA61329820DBAE3C004BA4EA /* AppDelegate.m */,
 				EA61329A20DBAE3C004BA4EA /* ViewController.h */,
@@ -130,6 +140,27 @@
 				EA6132BD20DBAE44004BA4EA /* Info.plist */,
 			);
 			path = ExpandAndDeleteUITests;
+			sourceTree = "<group>";
+		};
+		EA6422A1212D3B3400A3ACF2 /* expandAndDelete */ = {
+			isa = PBXGroup;
+			children = (
+				EA6422A2212D3B3400A3ACF2 /* JWExpandAndDeleteVC.h */,
+				EA6422A3212D3B3400A3ACF2 /* JWExpandAndDeleteVC.m */,
+				EA6422A4212D3B3400A3ACF2 /* view */,
+			);
+			path = expandAndDelete;
+			sourceTree = "<group>";
+		};
+		EA6422A4212D3B3400A3ACF2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EA6422A5212D3B3400A3ACF2 /* JWExpandCell.h */,
+				EA6422A6212D3B3400A3ACF2 /* JWExpandCell.m */,
+				EA6422A7212D3B3400A3ACF2 /* JWOriginCell.h */,
+				EA6422A8212D3B3400A3ACF2 /* JWOriginCell.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6422AB212D3B3400A3ACF2 /* JWOriginCell.m in Sources */,
+				EA6422A9212D3B3400A3ACF2 /* JWExpandAndDeleteVC.m in Sources */,
 				EA61329C20DBAE3C004BA4EA /* ViewController.m in Sources */,
 				EA6132A720DBAE44004BA4EA /* main.m in Sources */,
+				EA6422AA212D3B3400A3ACF2 /* JWExpandCell.m in Sources */,
 				EA61329920DBAE3C004BA4EA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4FKYMDS6F;
 				INFOPLIST_FILE = ExpandAndDelete/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4FKYMDS6F;
 				INFOPLIST_FILE = ExpandAndDelete/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
