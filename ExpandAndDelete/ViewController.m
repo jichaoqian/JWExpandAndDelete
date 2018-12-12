@@ -21,7 +21,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     button.bounds = CGRectMake(0, 0, 200, 30);
-    button.center = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds])/2, 100 + 0 *50);
+    button.center = CGPointMake(CGRectGetWidth([[UIScreen mainScreen] bounds])/2, 100 + 2 *50);
     [button setTitle:@"展开和删除" forState:UIControlStateNormal];
     button.tag =  10+0;
     [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
